@@ -1,2 +1,2 @@
-# REU: Human-in-the-loop Audio Adversarial Attacks Research
-Repository for my NSF REU research on human-in-the-loop audio adversarial attacks.
+# REU: Cybersecurity research on perception-aware adversarial audio attacks
+Repository for my NSF REU research on perception-aware adversarial audio attacks.
