@@ -24,6 +24,19 @@ This repository documents two connected research explorations:
 - **Content ID Tests:** 10 audio-only video uploads tested for copyright claims
 - **Watermarking:** Preparing to implement the Invisible Watermark framework (Zhang et al., 2019)
 
+## Outputs
+
+This folder contains experimental visuals and screenshots for both phases of the research.
+
+## Speech Copyright Detection
+- Screenshots of YouTube’s Content ID results for MLK and Joker speech tests
+- Summary results table of 10 uploaded clips and corresponding claims
+- Flowchart diagram of the audio-only testing methodology
+
+## Watermark Robustness
+- Visual pipeline for the proposed adversarial attack setup using Invisible Watermark
+
+
 ## 📁 Folder Structure
 - `reports/`: Final PDF report
 - `slides/`: Week 3 presentation
