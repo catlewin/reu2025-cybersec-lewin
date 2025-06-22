@@ -1,17 +1,45 @@
-# REU: Speech Copyright Detection and Deepfake Robustness via Adversarial Attacks on Watermarked Images
+# REU: Deepfake Robustness via Adversarial Attacks on Watermarked Images
 **Project Title:** Speech Copyright Detection and Deepfake Robustness via Adversarial Attacks on Watermarked Images
 
 **Student Name:** Cat Lewin
 
 **Mentor Name:** Dr. Rui Duan
 
-**Problem Statements:** 
-
-**Speech Copyright Detection**
-This project examines the limitations of automated copyright detection systems by evaluating whether pure speech content can evade detection, thereby revealing potential vulnerabilities in existing enforcement mechanisms.
+**Problem Statement:** 
 
 **Watermark Robustness in Deepfake Detection**
 This project aims to examine the resilience and robustness of invisible image watermarks to adversarial manipulation, and their reliability in support of proactive deepfake detection.
+
+# REU Week 4 – Cat Lewin
+
+**Project Summary** Three watermarking approaches were implemented and evaluated:
+
+- DWT-DCT
+- DWT-DCT-SVD
+- RivaGAN
+
+
+## Key Contributions
+
+Reproduced baseline (ShieldMnt) neural watermarking model
+
+Implemented classical frequency-based watermarking approaches
+
+Evaluated against JPEG, crop, rotate, noise, and more
+
+## Baseline Reproduction: Invisible Watermark (ShieldMnt)
+
+This project includes a partial reproduction of the Invisible Watermark framework, which provides a CNN-based encoder-decoder architecture for embedding and decoding imperceptible watermarks in images.
+
+[ShieldMnt GitHub repository](https://github.com/ShieldMnt/invisible-watermark)
+
+The reproduction focuses on:
+
+- Running the provided model on a clean test image
+- Applying adversarial attacks (e.g., JPEG, resize, crop, noise)
+- Measuring bitwise decode accuracy and perceptual similarity
+
+_Note: All code and models for this reproduction were adapted from the original ShieldMnt GitHub repository, accessed in June 2025._
 
 # REU Week 3 – Cat Lewin
 
