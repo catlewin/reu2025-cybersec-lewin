@@ -10,6 +10,19 @@
 **Watermark Robustness in Deepfake Detection**
 This project aims to examine the resilience and robustness of invisible image watermarks to adversarial manipulation, and their reliability in support of proactive deepfake detection.
 
+# REU Week 5–6 - Cat Lewin
+
+**Project Summary** During Weeks 5 and 6 of the REU program, the project focused on evaluating the robustness of invisible watermarking methods against a variety of adversarial image attacks. Three watermarking techniques were tested: DWT-DCT, DWT-DCT-SVD, and RivaGAN. A threshold-based evaluation framework was implemented to determine the attack severity at which each method fails to decode embedded watermarks.
+
+In Week 6, the pipeline was extended with perceptual similarity analysis using the LPIPS metric (AlexNet backbone) to assess how visually imperceptible attacks can still disrupt watermark integrity. The combined evaluation—decode success plus LPIPS score—helps identify particularly dangerous transformations that evade human detection but break watermarking.
+
+In parallel, the functional codebase and full set of results were maintained on a public repository:
+
+🔗 [invisible-watermark-cat GitHub Repository](https://github.com/catlewin/invisible-watermark-cat)
+
+The project is now positioned to test robustness against generative model–based attacks and to explore extensions using diffusion models and transformers.
+
+
 # REU Week 4 – Cat Lewin
 
 **Project Summary** Three watermarking approaches were implemented and evaluated:
