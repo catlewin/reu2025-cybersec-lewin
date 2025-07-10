@@ -1,97 +1,44 @@
-# REU: Deepfake Robustness via Adversarial Attacks on Watermarked Images
-**Project Title:** Speech Copyright Detection and Deepfake Robustness via Adversarial Attacks on Watermarked Images
+# REU: Watermark Robustness under Adversarial Attacks for Deepfake Detection
+**Project Title:** Watermark Robustness under Adversarial Attacks for Deepfake Detection
 
-**Student Name:** Cat Lewin
+**Student Name:** Cat Lewin - University of Missouri-Kansas City
 
 **Mentor Name:** Dr. Rui Duan
 
-**Problem Statement:** 
+GitHub (complete watermark evaluation repository): [invisible-watermark-cat](https://github.com/catlewin/invisible-watermark-cat)
+
+## Project Overview
 
 **Watermark Robustness in Deepfake Detection**
-This project aims to examine the resilience and robustness of invisible image watermarks to adversarial manipulation, and their reliability in support of proactive deepfake detection.
-
-# REU Week 5–6 - Cat Lewin
-
-**Project Summary** During Weeks 5 and 6 of the REU program, the project focused on evaluating the robustness of invisible watermarking methods against a variety of adversarial image attacks. Three watermarking techniques were tested: DWT-DCT, DWT-DCT-SVD, and RivaGAN. A threshold-based evaluation framework was implemented to determine the attack severity at which each method fails to decode embedded watermarks.
-
-In Week 6, the pipeline was extended with perceptual similarity analysis using the LPIPS metric (AlexNet backbone) to assess how visually imperceptible attacks can still disrupt watermark integrity. The combined evaluation—decode success plus LPIPS score—helps identify particularly dangerous transformations that evade human detection but break watermarking.
-
-In parallel, the functional codebase and full set of results were maintained on a public repository:
-
-🔗 [invisible-watermark-cat GitHub Repository](https://github.com/catlewin/invisible-watermark-cat)
-
-The project is now positioned to test robustness against generative model–based attacks and to explore extensions using diffusion models and transformers.
+This project focuses on evaluating the **robustness of invisible watermarking techniques** against a wide range of adversarial attacks with the goal of to building a systematic framework for testing how well watermarking methods like **DWT-DCT**, **DWT-DCT-SVD**, and **RivaGAN** can withstand both traditional and perceptual-based attacks. We also explore perceptual distortion using **LPIPS** and investigate emerging attack methods including denoising, rescaling, and embedding-based watermark removal.
 
 
-# REU Week 4 – Cat Lewin
+## Progress Summary
 
-**Project Summary** Three watermarking approaches were implemented and evaluated:
+### Week 2–3:
+- Explored initial idea around speech-based deepfake detection using YouTube’s Content ID system.
+- Found limitations with Content ID not reliably flagging speech-only content.
 
-- DWT-DCT
-- DWT-DCT-SVD
-- RivaGAN
+### Week 4–5:
+- Pivoted to invisible watermarking.
+- Implemented and tested 3 methods: DWT-DCT, DWT-DCT-SVD, and RivaGAN.
+- Designed 8 threshold-based attacks (e.g., crop, brightness, resize, rotate).
+- Built robustness pipeline with automated summary generation.
 
+### Week 6:
+- Integrated LPIPS perceptual metric.
+- Analyzed relationship between LPIPS and watermark decode failures.
+- Created plots and summary tables across methods and attack types.
 
-## Key Contributions
+### Week 7:
+- Drafted poster and updated conceptual diagram.
+- Added two new attack tests: **denoising** (NAFNet) and **rescaling** (image-super-resolution).
+- Started integrating findings into final poster and paper.
 
-Reproduced baseline (ShieldMnt) neural watermarking model
+## Future Work
+- Evaluate traditional watermarking tool [OpenStego](https://github.com/syvaidya/openstego)
+- Test advanced watermark attack [WatermarkAttacker](https://github.com/XuandongZhao/WatermarkAttacker)
+- Consider hybrid attacks, deepfake models, and AI explainability integration
 
-Implemented classical frequency-based watermarking approaches
-
-Evaluated against JPEG, crop, rotate, noise, and more
-
-## Baseline Reproduction: Invisible Watermark (ShieldMnt)
-
-This project includes a partial reproduction of the Invisible Watermark framework, which provides a CNN-based encoder-decoder architecture for embedding and decoding imperceptible watermarks in images.
-
-[ShieldMnt GitHub repository](https://github.com/ShieldMnt/invisible-watermark)
-
-The reproduction focuses on:
-
-- Running the provided model on a clean test image
-- Applying adversarial attacks (e.g., JPEG, resize, crop, noise)
-- Measuring bitwise decode accuracy and perceptual similarity
-
-_Note: All code and models for this reproduction were adapted from the original ShieldMnt GitHub repository, accessed in June 2025._
-
-# REU Week 3 – Cat Lewin
-
-## 🔍 Project Overview
-This repository documents two connected research explorations:
-1. **Speech Copyright Detection** using YouTube’s Content ID system
-2. **Adversarial Robustness of Invisible Watermarks** for deepfake detection
-
-## 🧪 Experiments
-- **Content ID Tests:** 10 audio-only video uploads tested for copyright claims
-- **Watermarking:** Preparing to implement the Invisible Watermark framework (Zhang et al., 2019)
-
-## Outputs
-
-This folder contains experimental visuals and screenshots for both phases of the research.
-
-## Speech Copyright Detection
-- Screenshots of YouTube’s Content ID results for MLK and Joker speech tests
-- Summary results table of 10 uploaded clips and corresponding claims
-- Flowchart diagram of the audio-only testing methodology
-
-## Watermark Robustness
-- Visual pipeline for the proposed adversarial attack setup using Invisible Watermark
-
-
-## 📁 Folder Structure
-- `reports/`: Final PDF report
-- `slides/`: Week 3 presentation
-- `notebooks/`: Experimental logs and setup plans
-- `outputs/`: Screenshots and tables from experiments
-
-## 📎 Reproduced Work
-- Attempted implementation of [LampMark](https://github.com/wangty1/LampMark) (paused)
-- Baseline moving forward: [Invisible Watermark](https://github.com/ShieldMnt/invisible-watermark)
-
-## ⚙️ Setup Instructions
-_Note: Watermarking experiments pending setup_
-```bash
-git clone https://github.com/ShieldMnt/invisible-watermark
-cd invisible-watermark
-pip install -r requirements.txt
-# Training instructions to follow
+## Acknowledgments
+This project is supported by the NSF REU Program at the University of Missouri–Kansas City. Special thanks to Dr. Fengjun Li and Dr. Yajin Duan for their mentorship.
