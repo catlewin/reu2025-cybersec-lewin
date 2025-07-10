@@ -1,6 +1,6 @@
 # 🔐 Watermarking Notebooks
 
-This folder contains scripts and notebooks used to run the watermark embedding, attack, and decoding workflows across DWT-DCT, DWT-DCT-SVD, and RivaGAN.
+This folder contains early code and notebooks used to replicate baseline watermarking methods and adversarial attacks as described in the ShieldMnt/invisible-watermark repository.
 
 ## 📁 Files
 
