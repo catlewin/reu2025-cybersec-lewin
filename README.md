@@ -41,4 +41,4 @@ This project focuses on evaluating the **robustness of invisible watermarking te
 - Consider hybrid attacks, deepfake models, and AI explainability integration
 
 ## Acknowledgments
-This project is supported by the NSF REU Program at the University of Missouri–Kansas City. Special thanks to Dr. Fengjun Li and Dr. Yajin Duan for their mentorship.
+This project is supported by the NSF REU Program at the University of Missouri–Kansas City.
