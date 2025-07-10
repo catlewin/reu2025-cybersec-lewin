@@ -1,4 +1,4 @@
-# REU: Watermark Robustness under Adversarial Attacks for Deepfake Detection
+# REU: NSF REU 2025 – AI-Enabled Cybersecurity Research
 **Project Title:** Watermark Robustness under Adversarial Attacks for Deepfake Detection
 
 **Student Name:** Cat Lewin - University of Missouri-Kansas City
